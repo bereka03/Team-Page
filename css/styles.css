@@ -1,0 +1,184 @@
+*,
+*::after,
+*::before {
+     box-sizing: border-box;
+ }
+ body {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+    margin: auto;
+ }
+header {
+    margin-top: 110px;
+}
+ .container {
+     max-width: 1200px;
+     overflow: hidden;
+     margin: auto;
+ }
+ .title {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+ }
+ .header-inner {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+ }
+ .header-inner a {
+     color: #000000;
+ }
+ .header-inner h2 {
+     font-weight: 600;
+ }
+ .text-wrapper {
+     max-width: 40%;
+ }
+ .main {
+     margin-top: 100px;
+ }
+ .main-inner {
+    margin: auto;
+    display: grid;
+    Grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-self: center;
+    grid-gap: 80px;
+    padding: 0 40px;
+ }
+ .img-wrapper {
+    margin: 0 auto;
+    position: relative;
+ }
+ img {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    transition: 0.4s ease-out;
+ }
+img:hover {
+    opacity: 0.85;
+}
+ .img-wrapper-inner {
+     display: inline-block;
+     position: relative;
+ }
+ .first::before {
+    content: 'Product Owner';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 2.9rem;
+    right: -4.1rem;
+ }
+.second::before {
+    content: 'Art director';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 2.35rem;
+    right: -3.5rem;
+ } 
+ .third::before {
+    content: 'Tech lead';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 1.55rem;
+    right: -3rem;
+ }
+ .forth::before {
+    content: 'UX Designer';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 2.05rem;
+    right: -3.4rem;
+ }
+ .fifth::before {
+    content: 'Developer';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 1.7rem;
+    right: -3rem;
+ }
+ .sixth::before {
+    content: 'DEverloper';
+    position: absolute;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    display: block;
+    top: 1.9rem;
+    right: -3.3rem;
+ }
+ .different {
+   margin-top: 89px;
+}
+ footer {
+     margin-top: 200px;
+     text-align: center;
+     font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #A9A9A9;
+    padding: 24px;
+ }
+ @media only screen and (max-width: 768px) {
+     .container {
+         max-width: 100%;
+         padding: 0 40px;
+     }
+     .header-inner {
+         display: flex;
+         flex-direction: column;
+         gap: 15px;
+     }
+     .text-wrapper {
+        max-width: 440px;
+     }
+     .main-inner {
+         padding: 0;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     .different {
+         margin-top: 0;
+     }
+     .second, .forth, .sixth {
+         margin-top: 80px;
+     }
+ }
